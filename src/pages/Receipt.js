@@ -1,4 +1,5 @@
 import { useQuery, gql } from "@apollo/client";
+import Nav from "./Nav";
 
 const GET_ALL_RECEIPTS = gql`
   query GetAllReceipts {
@@ -70,8 +71,9 @@ const Receipts = () => {
   if (error) return <p className="text-center text-red-500">Error: {error.message}</p>;
 
   return (
-    <div className="p-6 max-w-4xl mx-auto">
-      
+    <div className=" flex p-6 max-w-4xl mx-auto">
+      <Nav />
+       
       <h1 className="text-2xl font-bold text-gray-800 mb-4">Receipts</h1>
       <h2 className="text-center text-2xl font-bold">AZAN HOSPITAL</h2>
       <div className="grid gap-4">

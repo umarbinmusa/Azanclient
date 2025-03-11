@@ -7,9 +7,10 @@ import Dashbord from "./pages/Dashbord";
 import Viewdrug from "./pages/Viewdrug";
 import Buy from "./pages/Buy";
 import Dash from "./pages/Dash";
-import Recieipt from "./pages/Receipt";
+import Receipt from "./pages/Receipt";
 import Logout from "./pages/Logout";
 import List from "./pages/List";
+import Nav from "./pages/Nav";
 
 function App() {
   return (
@@ -23,9 +24,10 @@ function App() {
         <Route path="/drug" element={<Drug />} />
         <Route path="/login" element={<Login />} />
         <Route path="/Dash" element={<Dash />} /> 
-        <Route path="/reciept" element={<Recieipt />} /> 
+        <Route path="/receipt" element={<Receipt />} /> 
         <Route path="/logout" element={<Logout />} /> 
         <Route path="/list" element={<List />} /> 
+        <Route path="/nav" element={<Nav />} /> 
       </Routes>
     </BrowserRouter>
   );

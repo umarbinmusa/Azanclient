@@ -1,5 +1,6 @@
 import React from "react";
 import { useQuery, gql } from "@apollo/client";
+import Nav from "./Nav";
 
 const GET_DRUGS = gql`
   query GetDrugs {
@@ -26,6 +27,7 @@ function GetDrugs() {
 
   return (
     <div className="p-5">
+      <Nav />
       <h2 className="text-xl font-bold mb-4">Available Drugs</h2>
       <table className="w-full border-collapse border border-gray-300">
         <thead>

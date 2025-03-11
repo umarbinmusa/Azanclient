@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useMutation, gql } from "@apollo/client";
 import { useNavigate } from "react-router-dom";
-
+import Nav from "./Nav";
 const ADD_DRUG = gql`
   mutation AddDrug($name: String!, $price: Float!, $stock: Int!) {
     addDrug(name: $name, price: $price, stock: $stock) {
@@ -60,6 +60,7 @@ function AddDrug() {
 
   return (
     <div className="flex items-center justify-center h-screen bg-gray-100">
+      <Nav />
       <div className="bg-white p-8 rounded-lg shadow-md w-96">
         <h2 className="text-xl font-bold mb-4">Add Drug</h2>
         {message && <p className="mb-4 text-sm text-red-600">{message}</p>}
