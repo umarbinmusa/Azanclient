@@ -34,7 +34,7 @@ function Signup() {
       if (data.signup.token) {
         setMessage("✅ Signup successful! Redirecting...");
         localStorage.setItem("token", data.signup.token); // Store JWT
-        setTimeout(() => navigate("/dashboard"), 2000);
+        setTimeout(() => navigate("/login"), 2000);
       } else {
         setMessage("⚠️ Signup failed. Try again.");
       }
