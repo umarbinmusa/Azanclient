@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useMutation, gql } from "@apollo/client";
-
+import Search from "./Search";
 // GraphQL Mutation
 const BUY_DRUGS = gql`
   mutation BuyDrugs($drugs: [DrugPurchaseInput!]!) {
@@ -58,6 +58,7 @@ function BuyDrug() {
     <div className="w-screen h-screen flex items-center justify-center bg-[#90D5FF]">
       <div className="bg-white p-10 rounded-xl shadow-lg w-[40%]">
         <h2 className="text-xl font-bold mb-5">Buy Drugs</h2>
+        <p className="mb-10 items-center"> <Search /></p>
 
         {message && <p className="mb-4 text-sm text-center">{message}</p>}
 

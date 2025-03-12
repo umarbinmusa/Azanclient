@@ -33,7 +33,7 @@ function GetDrugs() {
         <thead>
           <tr className="bg-gray-200">
             <th className="border p-2">Name</th>
-            <th className="border p-2">Price ($)</th>
+            <th className="border p-2">Price ₦</th>
             <th className="border p-2">Stock</th>
           </tr>
         </thead>

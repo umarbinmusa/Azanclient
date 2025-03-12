@@ -11,6 +11,7 @@ import Receipt from "./pages/Receipt";
 import Logout from "./pages/Logout";
 import List from "./pages/List";
 import Nav from "./pages/Nav";
+import Search from "./pages/Search";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/logout" element={<Logout />} /> 
         <Route path="/list" element={<List />} /> 
         <Route path="/nav" element={<Nav />} /> 
+        <Route path="/search" element={<Search />} /> 
       </Routes>
     </BrowserRouter>
   );
