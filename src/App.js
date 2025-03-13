@@ -12,6 +12,8 @@ import Logout from "./pages/Logout";
 import List from "./pages/List";
 import Nav from "./pages/Nav";
 import Search from "./pages/Search";
+import Update from "./pages/Update";
+import Delete from "./pages/Delete";
 
 function App() {
   return (
@@ -29,7 +31,9 @@ function App() {
         <Route path="/logout" element={<Logout />} /> 
         <Route path="/list" element={<List />} /> 
         <Route path="/nav" element={<Nav />} /> 
-        <Route path="/search" element={<Search />} /> 
+        <Route path="/search" element={<Search />} />
+        <Route path="/update" element={<Update />} />  
+        <Route path="/delete" element={<Delete />} /> 
       </Routes>
     </BrowserRouter>
   );

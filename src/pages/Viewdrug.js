@@ -26,7 +26,8 @@ function GetDrugs() {
   if (error) return <p className="text-red-500">Error: {error.message}</p>;
 
   return (
-    <div className="p-5">
+    <div className="flex justify-center items-center ml-5 pl-5">
+      <div></div>
       <Nav />
       <h2 className="text-xl font-bold mb-4">Available Drugs</h2>
       <table className="w-full border-collapse border border-gray-300">
