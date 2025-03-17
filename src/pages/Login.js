@@ -46,7 +46,7 @@ function Login() {
   
         setTimeout(() => {
           if (userRole === "ADMIN") navigate("/dashbord");
-          else if (userRole === "CASHIER") navigate("/Receipt");
+          else if (userRole === "CASHIER") navigate("/Nav2");
           else if (userRole === "PHARMACIST") navigate("/Dash");
           else setMessage("⚠️ Unauthorized role.");
         }, 2000);

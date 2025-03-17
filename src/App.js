@@ -14,6 +14,12 @@ import Nav from "./pages/Nav";
 import Search from "./pages/Search";
 import Update from "./pages/Update";
 import Delete from "./pages/Delete";
+import Test1 from "./pages/Test1";
+import Testr from "./pages/Testr";
+import Addtest from "./pages/Addtest";
+import Nav2 from "./pages/Nav2";
+import Viewtest from "./pages/Viewtest";
+
 
 function App() {
   return (
@@ -34,6 +40,12 @@ function App() {
         <Route path="/search" element={<Search />} />
         <Route path="/update" element={<Update />} />  
         <Route path="/delete" element={<Delete />} /> 
+        <Route path="/test1" element={<Test1 />} /> 
+        <Route path="/testr" element={<Testr />} /> 
+        <Route path="/addtest" element={<Addtest />} /> 
+        <Route path="/viewtest" element={<Viewtest />} /> 
+        <Route path="/nav2" element={<Nav2 />} /> 
+
       </Routes>
     </BrowserRouter>
   );
