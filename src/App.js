@@ -19,7 +19,10 @@ import Testr from "./pages/Testr";
 import Addtest from "./pages/Addtest";
 import Nav2 from "./pages/Nav2";
 import Viewtest from "./pages/Viewtest";
-
+import Services from "./pages/Services";
+import Allservices from "./pages/Allservices";
+import Servicereciept from "./pages/Servicereciept";
+import Serchs from "./pages/Serchs";
 
 function App() {
   return (
@@ -27,6 +30,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/servicereciept" element={< Servicereciept/>} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/serchs" element={<Serchs />} />
+        <Route path="/allservices" element={<Allservices/>} />
         <Route path="/dashbord" element={<Dashbord />} />
         <Route path="/buy" element={<Buy />} />
         <Route path="/viewdrug" element={<Viewdrug />} />
