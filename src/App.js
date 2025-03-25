@@ -23,13 +23,17 @@ import Services from "./pages/Services";
 import Allservices from "./pages/Allservices";
 import Servicereciept from "./pages/Servicereciept";
 import Serchs from "./pages/Serchs";
+import Production from "./pages/Production";
+import Pro from "./pages/Pro";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/culture" element={<Register />} />
+        <Route path="/pro" element={<Pro />} />
+        <Route path="/production" element={<Production />} />
         <Route path="/servicereciept" element={< Servicereciept/>} />
         <Route path="/services" element={<Services />} />
         <Route path="/serchs" element={<Serchs />} />

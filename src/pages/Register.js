@@ -47,7 +47,7 @@ function Signup() {
     <div className="w-screen h-screen flex items-center justify-center bg-[#90D5FF]">
       <div className="flex min-h-screen">
         <div className="flex-[3] flex-shrink flex items-center justify-center">
-          <img src="./images/signup.png" alt="Signup" className="m-10" />
+          <img src="./images/ambulance.png" alt="Signup" className="m-10" />
         </div>
         <div className="flex-[2] flex-shrink flex flex-col bg-white m-30 p-10 rounded-l-xl items-start ml-80 justify-center">
           <div className="mb-7">
@@ -73,10 +73,13 @@ function Signup() {
               <label htmlFor="role" className="block">Role</label>
               <select id="role" className="w-full border px-4 py-2 rounded"
                 value={role} onChange={(e) => setRole(e.target.value)} required>
-              
+              <option value="">select Type</option>
                 <option value="ADMIN">Admin</option>
                 <option value="CASHIER">Cashier</option>
                 <option value="PHARMACIST">Pharmacy</option>
+                <option value="PRODUCTION">Production</option>
+                <option value="DIRECTOR">DIRECTOR</option>
+
               </select>
             </div>
 

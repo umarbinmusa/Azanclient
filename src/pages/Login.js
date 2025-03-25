@@ -48,6 +48,8 @@ function Login() {
           if (userRole === "ADMIN") navigate("/dashbord");
           else if (userRole === "CASHIER") navigate("/Nav2");
           else if (userRole === "PHARMACIST") navigate("/Dash");
+          else if (userRole === "PRODUCTION") navigate("/production");
+          else if (userRole === "DIRECTOR") navigate("/dashbord");
           else setMessage("⚠️ Unauthorized role.");
         }, 2000);
       } else {
