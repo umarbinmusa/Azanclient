@@ -25,7 +25,8 @@ import Servicereciept from "./pages/Servicereciept";
 import Serchs from "./pages/Serchs";
 import Production from "./pages/Production";
 import Pro from "./pages/Pro";
-
+import ViewTran from "./pages/ViewTran";
+import Trancash from "./pages/Trancash";
 function App() {
   return (
     <BrowserRouter>
@@ -33,6 +34,8 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/culture" element={<Register />} />
         <Route path="/pro" element={<Pro />} />
+        <Route path="/trancash" element={<Trancash/>} />
+        <Route path="/viewtran" element={<ViewTran/>} />
         <Route path="/production" element={<Production />} />
         <Route path="/servicereciept" element={< Servicereciept/>} />
         <Route path="/services" element={<Services />} />

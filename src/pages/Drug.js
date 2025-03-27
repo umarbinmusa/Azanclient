@@ -28,7 +28,7 @@ function AddDrug() {
     },
     onCompleted: () => {
       setMessage("✅ Drug added successfully!");
-      setTimeout(() => navigate("/dashboard"), 2000);
+      setTimeout(() => navigate("/dashbord"), 2000);
     },
     onError: (err) => {
       setMessage("❌ " + (err.message || "Error adding drug."));

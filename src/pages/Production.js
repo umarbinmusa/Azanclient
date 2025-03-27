@@ -33,7 +33,7 @@ const ADD_PRODUCTION = gql`
   }
 `;
 
-const branches = ["ZABI_BRANCH", "RANJI_BRANCH", "ALHAJI_BRANCH", "DOGARAWA_BRANCH"];
+const branches = ["ZABI_BRANCH", "RANJI_BRANCH", "ALHAJI_BRANCH", "DOGARAWA_BRANCH","YOUGHUT"];
 
 export default function ProductionForm() {
   const [formData, setFormData] = useState({

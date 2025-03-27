@@ -84,7 +84,7 @@ const Receipts = () => {
               <span className="font-medium">Date:</span> {new Date(parseInt(receipt.date)).toLocaleString()}
             </p>
             <p className="text-sm text-gray-700 font-medium mt-2">
-              Total Price: <span className="text-green-600">${receipt.totalPrice}</span>
+              Total Price: <span className="text-green-600">₦{receipt.totalPrice}</span>
             </p>
             <div className="mt-4">
               <h3 className="text-sm font-medium text-gray-600">Drugs Purchased:</h3>

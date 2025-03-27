@@ -71,7 +71,7 @@ function Login() {
         </div>
         <div className="flex-[2] flex-shrink flex flex-col bg-white m-30 p-10 rounded-l-xl items-start ml-80 justify-center">
           <div className="mb-7">
-            <h1 className="font-bold text-2xl">Pharmacy</h1>
+            <h1 className="font-bold text-2xl">AZAN</h1>
             <h2 className="font-bold text-xl">Login</h2>
           </div>
 
